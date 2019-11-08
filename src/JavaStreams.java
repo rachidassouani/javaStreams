@@ -18,6 +18,7 @@ public class JavaStreams {
                 .range(1, 10)
                 .forEach(out::print);
                 out.println();
+
         // 2- Integer Stream with skip.
         IntStream
                 .range(1, 10)
@@ -68,8 +69,6 @@ public class JavaStreams {
                .filter(carName-> carName.contains("BMW"))
                .collect(Collectors.toList());
         carNames2.forEach(System.out::println);
-
-        // 10-
 
     }
 
